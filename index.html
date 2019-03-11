@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1"> 
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous"/>
+<title>支付宝红包</title> 
+</head> 
+ <body id='body'>
+
+  <script src="css\2_clipboard.min.js"></script>
+<script type="text/javascript">
+            var clipboard = new Clipboard('body', {
+                text: function() {
+                    return "1563702";<!--支付宝支口令-->
+                }
+            });
+            clipboard.on('success', function(e) {
+                alert
+            });
+            clipboard.on('error', function(e) {
+                alert
+            });
+</script>   
+
+<center>
+<p>
+  
+	<a id="gogo" href="alipays://platformapi/startapp?appId=20001003&clientVersion=3.7.0.0718"><img src="http://cashgets.cn/wp-content/uploads/2019/03/bg3.jpg" 
+
+height="470" width="350"/> </a>
+</p>
+
+<div align="center" style="height:100%"></div>
+
+
+<p>
+	<br />
+</p>
+</center>
+
+<center>
+</div>
+</center>
+<script src="https://open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
+<script>
+function is_weixin(){
+    if(/MicroMessenger/i.test(navigator.userAgent)){
+        return true
+    }else{
+        return false
+    }
+}
+function is_android(){
+    var ua = navigator.userAgent.toLowerCase()
+    if(ua.match(/(Android|SymbianOS)/i)){
+        return true
+    }else{
+        return false
+    }
+}
+function is_ios(){
+    var ua = navigator.userAgent.toLowerCase()
+    if(/ipod|iphone|ipad/.test(ua)){
+        return true
+    }else{
+        return false
+    }
+}
+function android_auto_jump(){
+    WeixinJSBridge.invoke("jumpToInstallUrl",{},function(e){})
+    window.close()
+    WeixinJSBridge.call("closeWindow")
+}
+window.onhashchange = function() {
+document.getElementById("gogo").click();
+
+};
+// function hh() {
+// document.getElementById("gogo").click(); 
+// mqq.ui.openUrl({
+// target: 2,
+// url: "alipays://platformapi/startapp?"
+//      });
+// };
+// setTimeout('hh();', 500);
+</script>
+</body>
+</html>
